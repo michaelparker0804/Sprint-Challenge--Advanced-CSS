@@ -1,1 +1,34 @@
 // Navigation code here
+
+.navigation {
+    max-width: 880px;
+    margin: auto;
+    .displayFlex();
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    h2 {
+        margin: auto;
+        font-size: 4rem;
+    }
+    nav {
+        width: 35rem;
+        margin: auto;
+        .displayFlex();
+        padding-top: 1rem;
+
+        a {
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.801);
+            font-size: 1.5rem;
+        }
+    }
+    
+    @media @phone {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: white;
+    }
+}
